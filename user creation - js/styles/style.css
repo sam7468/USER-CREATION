@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+
+body{
+    background-color: #222831;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #E8E8E8;
+    border-radius: 20px 20px 30px 30px;
+    margin: 150px auto;
+    width: 900px;
+    min-height: 600px;
+    
+}
+
+.main-container header{
+    display:flex;
+    color:#E8E8E8 ;
+    justify-content: center;
+    background-color: #30475E;
+    max-height: 50px;
+    border-radius: 40px;
+    width: 100%;
+}
+
+section{
+margin:0 20px 0 20px;
+}
+
+.form{
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    max-width: 45%;
+    
+}
+
+#line{
+    opacity: 0.3;
+    position: absolute;
+    margin: 40px 0 20px 400px;
+    height: 450px;
+    width: 0px;
+    border:1px solid rgb(39, 39, 39);
+}
+
+.display{
+    display:flex;
+    flex-wrap: wrap;
+    font-family:'Roboto Mono', monospace; ;
+    justify-content:space-around;
+    align-items:center;
+    flex-direction: column;
+    float: right;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    width: 45%;
+    min-height: 300px;
+    animation: fadeInAnimation ease 2s;
+    animation-fill-mode: forwards;
+}
+
+.user-details{
+    animation: fadeInAnimation ease 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.user-details{
+    display: flex;
+    border-radius: 20px;
+    color: #E8E8E8;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding-right:20px ;
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 95% ;
+    background-color: #30475E;
+}
+
+.user-details ul{
+    float: left;
+    list-style: none;
+
+}
+
+.user-details img{
+
+    float: right;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width:800px){
+    .main-container{
+        width: 400px;
+    }
+    
+    #line{
+        display: none;
+    }
+    .display{
+        float: none;
+        width: 95%;
+    }
+}
+.btn{
+    color: #E8E8E8;
+    background-color: #30475E;
+}
